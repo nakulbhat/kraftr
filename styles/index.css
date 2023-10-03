@@ -23,12 +23,14 @@ body{
 .innerwrapper{
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
+    scroll-snap-type: x mandatory;
 }
 .slide {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
+    scroll-snap-align: start;
 }
 .innerwrapper {
     display: flex;
@@ -41,24 +43,26 @@ body{
     background-repeat: no-repeat;
     
 }.two {background:#755851;}.three {background: #598F7F;}.four {background: #C5D8A4;}
+
 .window{
-    width: 80%;
-    height: 80%;
+    width: 80vw;
+    height: 70vh;
     margin: auto;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
     border-radius: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: whitesmoke;
 }
 .brandtitle{
-    font-size: 50px;
+    font-size: clamp(5rem, 10vw, 10rem);
+    text-align: center;
     font-family: Playfair Display;
 }
 .tagline{
-    font-size: 5rem;
+    font-size: clamp(50px, 5vw, 100PX);
     font-family: sacramento;
 }
 .splash{
@@ -66,4 +70,14 @@ body{
     justify-content: space-evenly;
     flex-direction: column;
 
+}
+button{
+    width: clamp(150px, 19vw, 250px);
+    height: clamp(50px, 5vh, 71px);
+    background-color: black;
+    border-width: 0px;
+    border-radius: 10px;
+    color: wheat;
+    font-family: Gabarito;
+    font-size: 1.4rem;
 }
