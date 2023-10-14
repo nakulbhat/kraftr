@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Gabarito:wght@400;500&family=Lora&family=Martian+Mono&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sacramento&display=swap');
+:root{
+    --bgcolor: #E5D3B3;
+    --fontcolor: #664229;
+    --glasscolor: #d2b48c82;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bgcolor);
+    height: 100vh;
+    width: 100vw;
+    color: var(--fontcolor);
+}
+.center{
+    margin-right: auto;
+    margin-left: auto;
+}
+.glass{
+    background-color: var(--glasscolor);
+    backdrop-filter: blur(5px);
+}
+.rounded{
+    border-radius: 2rem;
+    border-width: 0px;
+}
+.fadeinleft{
+    animation: fadeinleft 2s ease-in-out both;
+}
+.fadeinright{
+    animation: fadeinright 2s ease-in-out both;
+}
+.fadeintop{
+    animation: fadeintop 2s ease-in-out both;
+}
+.fadein{
+    animation: fadein 2s ease-in-out  both;
+}
+@keyframes fadeinleft {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+
+        transform: scale(1) translateX(0px);
+    }
+}
+@keyframes fadeinright {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateX(0px);
+    }
+}
+@keyframes fadeintop {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0px);
+    }
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) ;
+    }
+}
+button.grow:hover{
+    transform: scale(1.25);
+}
+button{
+    width: clamp(150px, 19vw, 250px);
+    height: clamp(50px, 5vh, 71px);
+    background-color: var(--bgcolor);
+    border-width: 0px;
+    border-radius: 10px;
+    color: var(--fontcolor);
+    font-family: Gabarito;
+    font-size: 1.4rem;
+    transition: ease-in-out 0.25s;
+}
+button:active{
+    color: var(--bgcolor);
+    background-color: var(--fontcolor);
+}
+.bounce{
+    animation: bounce 1s ease-in-out 3s infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0px);
+    }
+    33%{
+        transform: translateY(-10px);
+    }
+    66%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

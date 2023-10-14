@@ -1,14 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Gabarito:wght@400;500&family=Lora&family=Martian+Mono&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sacramento&display=swap');
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    color: wheat;
-}
+
+
 .splashscreen {
-    background-image: url(../sources/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -18,83 +10,40 @@ body{
 div > div.splashwindow{ 
     width: 80vw;
     height: 70vh;
-    margin: auto;
     margin-top: 15vh;
     margin-bottom: 15vh;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    border-radius: 2rem;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+
 }
 .brandtitle{
     font-size: clamp(5rem, 10vw, 10rem);
     text-align: center;
     font-family: Playfair Display;
-    animation: faderight 2s ease-in-out both;
+
 }
 .tagline{
     font-size: clamp(50px, 5vw, 100PX);
     font-family: sacramento;
 }
-button{
-    width: clamp(150px, 19vw, 250px);
-    height: clamp(50px, 5vh, 71px);
-    background-color: black;
-    border-width: 0px;
-    border-radius: 10px;
-    color: wheat;
-    font-family: Gabarito;
-    font-size: 1.4rem;
-    transition: ease-in-out 0.2s;
-}
-.splashscreen > button{
-    margin-top: 150px;
-}
-button:hover{
-    transform: scale(1.5);
-}
-
-
-
-@keyframes fadeleft {
-    0% {
-        opacity: 0;
-        transform: scale(0.8) translateX(-100px);
-    }
-    100%{
-        opacity: 1;
-
-        transform: scale(1) translateX(0px);
-    }
-}
-@keyframes faderight {
-    0% {
-        opacity: 0;
-        transform: scale(0.8) translateX(100px);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1) translateX(0px);
-    }
-}
-@keyframes identifier {
+img{
+    width: 2rem;
+    margin-top: 2rem;
+    filter: sepia(1);
     
 }
+
 .bottomscreen{
     display: flex;
     grid: 1fr 1fr;
 }
+
 .leftproduct, .rightproduct{
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
     width: 40vw;
     height: 70vh;
-    margin: auto;
     margin-top: 15vh;
     margin-bottom: 15vh;
     border-radius: 2rem;
