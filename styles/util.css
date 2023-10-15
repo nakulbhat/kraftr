@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Gabarito:wght@400;500&family=Lora&family=Martian+Mono&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sacramento&display=swap');
 :root{
     --bgcolor: #E5D3B3;
-    --fontcolor: #664229;
-    --glasscolor: #d2b48c82;
+    --fontcolor: #ffffff;
+    --glasscolor: #84848482;
 }
 
 body{
