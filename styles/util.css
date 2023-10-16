@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Gabarito:wght@400;500&family=Lora&family=Martian+Mono&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sacramento&display=swap');
 :root{
-    --bgcolor: #E5D3B3;
+    --bgcolor: #000000;
     --fontcolor: #ffffff;
     --glasscolor: #84848482;
 }
@@ -79,20 +79,20 @@ body{
     }
 }
 button.grow:hover{
-    transform: scale(1.25);
+    transform: scale(1.1);
 }
 button{
     width: clamp(150px, 19vw, 250px);
     height: clamp(50px, 5vh, 71px);
     background-color: var(--bgcolor);
     border-width: 0px;
-    border-radius: 10px;
     color: var(--fontcolor);
     font-family: Gabarito;
     font-size: 1.4rem;
     transition: ease-in-out 0.25s;
+    position: relative;
 }
-button:active{
+button:hover{
     color: var(--bgcolor);
     background-color: var(--fontcolor);
 }
@@ -112,4 +112,8 @@ button:active{
     100%{
         transform: translateY(0px);
     }
+}
+.nomarginnopad{
+    margin: 0;
+    padding: 0;
 }

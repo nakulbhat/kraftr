@@ -1,18 +1,20 @@
 
 
 .splashscreen {
-    background-image: url(../sources/IMG_1769.JPG);
+    background-image: url(../sources/IMG_9690.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     z-index: -1;
-    height: 250vh;
+    height: 200vh;
     padding-top: 15vh;
 }
+
 div > div.splashwindow{ 
     width: 80vw;
     height: 70vh;
+
     margin-bottom: 15vh;
     display: flex;
     justify-content: space-evenly;
@@ -31,32 +33,22 @@ div > div.splashwindow{
     font-size: clamp(50px, 5vw, 100PX);
     font-family: sacramento;
 }
-img{
+.splashwindow img{
     width: 2rem;
     margin-top: 2rem;
     filter: sepia(1);
+    position: relative;
     
 }
-
-.bottomscreen{
-    display: flex;
-    grid: 1fr 1fr;
-}
-
-.leftproduct, .rightproduct{
-    width: 40vw;
-    height: 70vh;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    border-radius: 2rem;
-}
 .secondscreen{
-    margin-top: 200vh;
     background-attachment: fixed;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     z-index: -1;
+    align-items: center;
+    display: grid;
+    text-align: center;
 }
 /*
 
