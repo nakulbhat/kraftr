@@ -22,6 +22,11 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
+.centertext{
+    text-align: center;
+    vertical-align: middle;
+}
+
 .glass{
     background-color: var(--glasscolor);
     backdrop-filter: blur(5px);
