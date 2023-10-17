@@ -1,0 +1,66 @@
+:root{
+    --fontsize: 2rem;
+}
+
+*{
+    margin: auto;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 70vw;
+    margin-top: 5vh;
+}
+
+label{
+    font-family: Gabarito;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+    font-size: var(--fontsize);
+}
+input, select{
+    width: clamp(5rem, 60vw, 40rem);
+    border-radius: 5px;
+    font-size: var(--fontsize);
+    border-width: 0;
+    background-color: var(--glasscolor);
+    border-bottom-width: 2px;
+}
+input[type=submit],input[type=reset]{
+    width: clamp(150px, 19vw, 250px);
+    height: clamp(50px, 5vh, 71px);
+    background-color: var(--bgcolor);
+    border-width: 0px;
+    color: var(--fontcolor);
+    font-family: Gabarito;
+    font-size: var(--fontsize);
+    transition: ease-in-out 0.25s;
+    position: relative;
+    border-bottom-width: 0px; 
+    margin-top: 1rem;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    color: var(--bgcolor);
+    background-color: var(--fontcolor);
+    opacity: 0.6;
+}
+input[type=submit]:active, input[type=reset]:active{
+    color: var(--bgcolor);
+    background-color: var(--fontcolor);
+    opacity: 1;
+    transition: 0s;
+}
+/*Workaround to disable arrows in number field below*/
+input[type=number]{
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*Workaround to disable arrows in number field above*/
