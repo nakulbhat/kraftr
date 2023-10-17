@@ -1,18 +1,54 @@
-:root{
+/* :root{
     --fontsize: 2rem;
+} */
+@media screen and (width <100vh) {
+    :root{
+        --fontsize: 1.5rem;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .rounded{
+        border-radius: 0;
+    }
+}
+@media screen and (width >= 100vh) {
+    :root{
+        --fontsize: 2rem;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 70vw;
+
+    }
+    
+    .splashscreen{
+        height: 100vh;
+        padding-top: 10vh;
+    }
 }
 
 *{
     margin: auto;
     text-align: center;
     transition: all 0.2s ease-in-out;
+    padding: 0;
 }
-fieldset{
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    width: 70vw;
-    margin-top: 5vh;
+
+.splashscreen {
+    background-image: url(../sources/IMG_9690.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: -1;
 }
 
 label{

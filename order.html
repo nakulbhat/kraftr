@@ -8,48 +8,48 @@
     <link rel="stylesheet" href="styles/orderform.css">
 </head>
 <body>
-    <form action="https://api.sheetmonkey.io/form/hfH7jtVUyCLG5QxSQ21HbL" method="POST" id="my-form">
-        <fieldset class="glass rounded">
+    <div class="splashscreen">
+        <form action="https://api.sheetmonkey.io/form/hfH7jtVUyCLG5QxSQ21HbL" method="POST" id="my-form">
+            <fieldset class="glass rounded">
+                <div class="formelement">
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="Name" id="name" placeholder="Name" required>
+                </div>
+                <div class="formelement">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                </div>
+                <div class="formelement">
+                    <label for="add">Shipping Address</label><br>
+                    <input type="text" name="Address" id="add" placeholder="Address" required>
+                </div>
             <div class="formelement">
-                <label for="name">Name</label> <br>
-                <input type="text" name="Name" id="name" placeholder="Name" required>
+                <label for="wnum">Contact Number</label><br>
+                <input type="number" name="WhatsAppNumber" id="wnum" placeholder="WhatsApp number" required pattern="[0-9]{5}">
             </div>
             <div class="formelement">
-                <label for="email">Email</label> <br>
-                <input type="email" name="Email" id="email" placeholder="Email" required>
+                <label for="name">Shoe Size</label><br>
+                <select name="Size" id="size" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7 </option>
+                </select>
+            </div>    <div class="formbuttons">
+                <input type="submit" name="submit" value="Order">
+                <input type="reset" name="reset" id="">
             </div>
-            <div class="formelement">
-                <label for="add">Shipping Address</label><br>
-                <input type="text" name="Address" id="add" placeholder="Address" required>
-            </div>
-
-        <div class="formelement">
-            <label for="wnum">Contact Number</label><br>
-            <input type="number" name="WhatsAppNumber" id="wnum" placeholder="WhatsApp number" required pattern="[0-9]{5}">
-        </div>
-        <div class="formelement">
-            <label for="name">Shoe Size</label><br>
-            <select name="Size" id="size" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7 </option>
-
-            </select> 
-        </div>    <div class="formbuttons">
-            <input type="submit" name="submit" value="Order">
-            <input type="reset" name="reset" id="">
-        </div>
-    </fieldset>
-    <input 
-    type="hidden" 
-    name="x-sheetmonkey-redirect" 
-    value="https://google.com" 
-/>
-    </form>
+        </fieldset>
+        <input
+        type="hidden"
+        name="x-sheetmonkey-redirect"
+        value="https://google.com" 
+        />
+        </form>
+    </div>
 
 </body>
 </html>
