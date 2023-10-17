@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order from Kraftr</title>
     <link rel="stylesheet" href="styles/util.css">
-    <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/orderform.css">
 </head>
 <body>
-    <form action="example.com">
+    <form action="example.com" method="post">
         <fieldset class="glass rounded">
             <div class="formelement">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="name">Name</label> <br>
+                <input type="text" name="Name" id="name" placeholder="Name" required>
             </div>
             <div class="formelement">
-                <label for="name">Email</label>
-                <input type="email" name="name" id="name" placeholder="Email">
+                <label for="email">Email</label> <br>
+                <input type="email" name="Email" id="email" placeholder="Email" required>
             </div>
             <div class="formelement">
-                <label for="name">Shipping Address</label>
-                <input type="text" name="name" id="name" placeholder="Address">
+                <label for="add">Shipping Address</label><br>
+                <input type="text" name="Address" id="add" placeholder="Address" required>
             </div>
 
         <div class="formelement">
-            <label for="name">Contact Number</label>
-            <input type="number" name="name" id="name" placeholder="WhatsApp number">
+            <label for="wnum">Contact Number</label><br>
+            <input type="number" name="WhatsAppNumber" id="wnum" placeholder="WhatsApp number" required>
         </div>
         <div class="formelement">
-            <label for="name">Size</label>
-            <input type="checkbox" name="name" id="name" placeholder="Your name">
-        </div>
+            <label for="name">Size</label><br>
+            <select name="size" id="size" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+
+            </select> 
+        </div>    <input type="submit" name="submit">
+        <input type="reset" name="reset" id="">
     </fieldset>
+
     </form>
    
 
