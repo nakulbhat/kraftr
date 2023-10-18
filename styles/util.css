@@ -1,15 +1,22 @@
+/* This file is an external utility css. remember to link to all webpages. only the most barebones css is written here. and remember to modularise any styles you put here. ex. you should be able to give class ="glass rounded center" and the element will behave so. try to keep reusable css here. */
+
+/* DO NOT modify any styles already here without notifying me. but you are allowed to add new classes and styles as you see fit. */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Gabarito:wght@400;500&family=Lora&family=Martian+Mono&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sacramento&display=swap');
+/*Importing fonts from google fonts. If you need to add a new font then you need to make sure the fonts mentioned here are also added. */
 
 *{
     transition: all 0.2s ease-in-out;
 }
-
+/* This property causes all elements to smoothly transition between two states */
 :root{
     --bgcolor: #000000;
     --fontcolor: #ffffff;
     --glasscolor: #84848482;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+/* Enables smooth scroll when a button is clicked to go to a section */
 body{
     margin: 0px;
     padding: 0px;
