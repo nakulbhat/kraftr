@@ -1,6 +1,4 @@
-/* :root{
-    --fontsize: 2rem;
-} */
+
 @media screen and (width <100vh) {
     :root{
         --fontsize: 1.5rem;
@@ -36,7 +34,7 @@
         padding-top: 10vh;
     }
 }
-
+/* The above media queriea are responsible for making the form responsive on mobile. */
 *{
     margin: auto;
     text-align: center;
@@ -53,7 +51,7 @@
     width: 100%;
     z-index: -1;
 }
-
+/* The splashscreen is a div with a zindex of -, i.e, under all other elements. It has a background of an image, and the link is above, if you want to change it. */
 label{
     font-family: Gabarito;
     letter-spacing: 0.5px;
@@ -81,6 +79,7 @@ input[type=submit],input[type=reset]{
     border-bottom-width: 0px; 
     margin-top: 1rem;
 }
+/* The code above and below is responsible to make the submit and reset fields look like buttons. */
 input[type=submit]:hover, input[type=reset]:hover{
     color: var(--bgcolor);
     background-color: var(--fontcolor);
