@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order from Kraftr</title>
+    <link rel="stylesheet" href="styles/util.css">
+    <link rel="stylesheet" href="styles/orderform.css">
+</head>
+<body>
+    <div class="splashscreen">
+        <form action="https://api.sheetmonkey.io/form/pn2FVEyw6ms9tsca7sFRb2" method="POST" id="my-form">
+            <fieldset class="glass rounded">
+                <div class="formelement">
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="Name" id="name" placeholder="Name" required>
+                </div>
+                <div class="formelement">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
+                </div>
+                <div class="formelement">
+                    <label for="add">Shipping Address</label><br>
+                    <input type="text" name="Address" id="add" placeholder="Address" required>
+                </div>
+            <div class="formelement">
+                <label for="wnum">Contact Number</label><br>
+                <input type="number" name="WhatsAppNumber" id="wnum" placeholder="WhatsApp number" required pattern="[1-9]{1}[0-9]{9}" min="1000000000" max="9999999999">
+            </div>
+            <div class="formelement">
+                <label for="name">Shoe Size</label><br>
+                <select name="Size" id="size" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7 </option>
+                </select>
+            </div>    <div class="formbuttons">
+                <input type="submit" name="submit" value="Order">
+                <input type="reset" name="reset" id="">
+            </div>
+        </fieldset>
+        <input
+        type="hidden"
+        name="x-sheetmonkey-redirect"
+        value="https://kraftrlyfstyle.com/payment.html" 
+        /><input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+        </form>
+    </div>
+
+</body>
+</html>
