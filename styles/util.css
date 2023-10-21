@@ -27,6 +27,7 @@ hidden & show -- for animating on scroll
     --bgcolor: #000000;
     --fontcolor: #ffffff;
     --glasscolor: #84848482;
+    --lightglasscolor: #8484842f;
 }
 html {
     scroll-behavior: smooth;
@@ -51,6 +52,10 @@ body{
 
 .glass{
     background-color: var(--glasscolor);
+    backdrop-filter: blur(5px);
+}
+.lightglass{
+    background-color: var(--lightglasscolor);
     backdrop-filter: blur(5px);
 }
 .rounded{
