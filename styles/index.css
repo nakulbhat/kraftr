@@ -30,7 +30,7 @@ div > div.splashwindow{
 }
 .tagline{
     font-size: clamp(50px, 5vw, 100PX);
-    font-family: sacramento;
+    font-family: gabarito;
 }
 .splashwindow img{   /* This selector works for the down arrow png under  the tagline */
     width: 2rem;
@@ -49,6 +49,18 @@ div > div.splashwindow{
     display: grid;
     text-align: center;
 
+}
+.storyandteam{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(114, 160, 200);
+}
+.storyandteam > div{
+    width: 40vw;
+    height: 50vh;
+    background-color: aqua;
+    justify-content: center;
+    text-align: center;
 }
 /*  Here is some archived code with values you can use as jumping off points.
 *{

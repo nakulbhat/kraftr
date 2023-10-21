@@ -11,19 +11,22 @@
 <body>
     <div class="splashscreen"> <!--This is the div that contains the background image-->
 
-        <div class="splashwindow center glass rounded hidden">
-            <div class="brandtitle fadeinleft">
-                Kraftr
-            </div>
-            <div class="tagline fadeinright ">Shoes with a soul</div>
-            <a href="/index.html#secondscreen"><img src="sources/downarrow.svg" alt="" class="fadeintop bounce"></a>
-            
+            <div class="splashwindow center glass rounded hidden child">
+                <div class="brandtitle fadeinleft">
+                    Kraftr
+                </div>
+                <div class="tagline fadeinright ">Shoes with a soul</div>
+                <a href="/index.html#secondscreen"><img src="sources/downarrow.svg" alt="" class="fadeintop bounce"></a>
+                
+        </div>
+        <div class="secondscreen center hidden child" id="secondscreen"><!--Transparent scrollable div that only contains the order button-->
+            <a href="orderform.html"><button class="order center rounded glass grow hidden">Order Now</button></a>
+        </div>
     </div>
-    <div class="secondscreen center hidden" id="secondscreen"><!--Transparent scrollable div that only contains the order button-->
-        <a href="orderform.html"><button class="order center rounded glass grow hidden">Order Now</button></a>
+    <div class="center centertext">Like what you see?</div>
+    <div class="storyandteam">
+        <div class="storypanel centertext">Story</div>
+        <div class="teampanel centertext">Team</div>
     </div>
-
-    +
-</div>
 </body>
 </html>
