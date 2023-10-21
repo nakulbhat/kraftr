@@ -6,22 +6,24 @@
     <title>Kraftr</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/util.css">
+    <script defer src="scripts/index.js"></script>
 </head>
 <body>
     <div class="splashscreen"> <!--This is the div that contains the background image-->
 
-        <div class="splashwindow center glass rounded fadein">
+        <div class="splashwindow center glass rounded hidden">
             <div class="brandtitle fadeinleft">
                 Kraftr
             </div>
             <div class="tagline fadeinright ">Shoes with a soul</div>
-            <img src="sources/downarrow.svg" alt="" class="fadeintop bounce">
+            <a href="/index.html#secondscreen"><img src="sources/downarrow.svg" alt="" class="fadeintop bounce"></a>
             
     </div>
-    <div class="secondscreen center"><!--Transparent scrollable div that only contains the order button-->
-        <a href="orderform.html"><button class="order center rounded glass grow fadein">Order Now</button></a>
+    <div class="secondscreen center hidden" id="secondscreen"><!--Transparent scrollable div that only contains the order button-->
+        <a href="orderform.html"><button class="order center rounded glass grow hidden">Order Now</button></a>
     </div>
 
+    +
 </div>
 </body>
 </html>
