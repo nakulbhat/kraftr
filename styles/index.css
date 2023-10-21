@@ -3,25 +3,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     z-index: -1;
     height: 100vh;
     position: fixed;
     top: 0; left: 0;
-    transition: all 15s ;
+    animation: fadein 3s ;
+    transition: all 2s;
 }
-@media screen and (width <768px) {
-    .splashscreen{
-        background-size: cover;
-        left: -50;
-    }
-}
-@media screen and (width >=768px) {
-    .splashscreen{
-        background-size: 120%;
-        left: -50;
-    }
-}
+
 div.splashwindow{ 
     width: 80vw;
     height: 70vh;
