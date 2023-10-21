@@ -3,6 +3,21 @@
 /* DO NOT modify any styles already here without notifying me. but you are allowed to add new classes and styles as you see fit. */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Gabarito:wght@400;500&family=Lora&family=Martian+Mono&family=Pixelify+Sans&family=Playfair+Display:ital,wght@0,400;1,600&family=Sacramento&display=swap');
 /*Importing fonts from google fonts. If you need to add a new font then you need to make sure the fonts mentioned here are also added. */
+/* Classlist:
+center
+centertext
+glass
+rounded
+fadeinleft
+fadeinright
+fadeintop
+fadein
+button.grow
+button
+bounce
+nomarginnopad
+hidden & show -- for animating on scroll
+*/
 
 *{
     transition: all 0.2s ease-in-out;
@@ -134,12 +149,28 @@ button:hover{
 }
 .hidden{
     opacity: 0;
-    transition: all 1s;
-    transform: translateX(-100px);
+    transition: all 1s 0.2s;
+    transform: scale(0.7);
     filter: blur(10px);
+}
+.img{
+    transform: scale(1);
+}
+.right{
+    transform: translateX(100px);
+}
+.left{
+    transform: translateX(-100px);
+}
+.top{
+    transform: translateY(-100px);
+}
+.bottom{
+    transform: translateY(100px);
 }
 .show{
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0px) scale(1);
     filter: blur(0px);
+    
 }
