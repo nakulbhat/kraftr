@@ -1,5 +1,5 @@
-.splashscreen {
-    /* The splashscreen is a div with a zindex of -, i.e, under all other elements. It has a background of an image, and the link is above, if you want to change it. */
+/*.splashscreen {
+     The splashscreen is a div with a zindex of -, i.e, under all other elements. It has a background of an image, and the link is above, if you want to change it. 
     background-image: url(../sources/IMG_9690.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -13,18 +13,37 @@
     left: 0;
     animation: fadein 3s;
     transition: all 2s;
+}*/
+.titlebar{
+    display: flex;
+    height: 10vh;
+    position: sticky;
+    justify-content: center;
+    width: 95vw;
+    margin: 3vh auto ;
+
+}
+.titlebar > a{
+    margin: auto;
+    font-size: 2.5em;
 }
 
-div.splashwindow {
-    width: 80vw;
-    height: 70vh;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+div.herowindow {
+    width: 95vw;
+    height: 20rem;
+    margin: 2vh auto;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+div .imgboxs{
+    background-image: url(../sources/IMG_9690.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    width: 50%;
 
 }
 body{
@@ -41,10 +60,11 @@ body{
 }
 
 .secondscreen {
-    /* This selector works for the transparent lower window with the order button */
+    background-image: url(/sources/IMG_9690.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 50vh;
-    width: 100vw;
+    height: 150vh;
     background-color: rgba(0, 0, 0, 0);
     z-index: -1;
     align-items: center;
@@ -80,6 +100,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2em auto;
 }
 .gallery > .imgbox{
     width: 10%;
@@ -112,84 +133,17 @@ body{
     background-position: 80% 0%;
 }
 
-/*  Here is some archived code with values you can use as jumping off points.
-*{
-    margin: 0rem;
-    padding: 0px;
-}
-
-body{
-    background-color: #598F7F;
-    height: 100vh;
+.slideover{
     width: 100vw;
-}
-.outerwrapper{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-}
-.innerwrapper{
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    scroll-snap-type: x mandatory;
-}
-.slide {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    scroll-snap-align: start;
-}
-.innerwrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-}
-.one {
-    background-image: url(../sources/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}.two {background:#755851;}.three {background: #598F7F;}.four {background: #C5D8A4;}
-
-.window{
-    width: 80vw;
-    height: 70vh;
-    margin: auto;
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
-}
-.brandtitle{
-    font-size: clamp(5rem, 10vw, 10rem);
-    text-align: center;
-    font-family: Playfair Display;
-}
-.tagline{
-    font-size: clamp(50px, 5vw, 100PX);
-    font-family: sacramento;
-}
-.splash{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-
-}
-button{
-    width: clamp(150px, 19vw, 250px);
-    height: clamp(50px, 5vh, 71px);
+    height: 150vh;
     background-color: black;
-    border-width: 0px;
-    border-radius: 10px;
-    color: wheat;
-    font-family: Gabarito;
-    font-size: 1.4rem;
-}*?
+
+}
+.stickytest1{
+    position: sticky;
+    height: 50px;
+    background-color: rebeccapurple;
+}
+.stickytest2{
+    height: 1000px;
+}

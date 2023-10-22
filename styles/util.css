@@ -18,7 +18,7 @@ button
 bounce
 nomarginnopad
 text
-hidden (top left bottom right img as class specifiers) & show  -- for animating on scroll
+hidden (top left bottom right nogrow as class specifiers) & show  -- for animating on scroll
 */
 
 *{
@@ -26,9 +26,9 @@ hidden (top left bottom right img as class specifiers) & show  -- for animating 
 }
 /* This property causes all elements to smoothly transition between two states */
 :root{
-    --bgcolor: #000000;
-    --fontcolor: #ffffff;
-    --glasscolor: #84848482;
+    --bgcolor: #ffffff;
+    --fontcolor: #000000;
+    --glasscolor: #F1F0ED;
     --lightglasscolor: #8484842f;
 }
 html {
@@ -159,7 +159,7 @@ button:hover{
     transform: scale(0.7);
     filter: blur(10px);
 }
-.img{
+.nogrow{
     transform: scale(1);
 }
 .right{
